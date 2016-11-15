@@ -1,13 +1,7 @@
 # OPener_Server：
 
 ### *什么是 OPener_Server?* 
-Opener_Server 是一个轻Http容器标准。 具体来说：以 Http Server 作为底层架构，以异步非阻塞模式为主要思想，通过Http POST模式构建一个可注入代码的容器程序。 OPener_Server 做为该容器的主体，通过http post方式注入新代码，新代码依靠脚本语言内置的EVAL方法来执行。
-
-### *关于OPener_Server的标准：* 
-这个标准描述了该Http容器的最终实现。这个标准可以指导以不同的语言来实现这个Opener_Server容器。
-现阶段Opener_Server标准主要靠Opener_Server.pl该程序来阐述。
-Opener_Server.pl该程序的位置：https://github.com/openerserver/openerserver_perl
-
+Opener_Server 是一个轻Http容器标准。 具体来说：以 Http Server 作为底层架构，以异步非阻塞模式为主要思想，通过Http POST模式构建一个可注入代码的容器，新注入的代码码依靠脚本语言内置的EVAL方法来执行。 
 
 ### *特点：* 
 * 编程思想：异步非阻塞模式贯穿程序。Http server是异步非阻塞模式，为了保证不与这个冲突，所有的注入代码均为异步非阻塞模式的实现。本容器作为以后的最小运行单元，保证异步非阻塞模式，可以方便大规模部署。
@@ -69,10 +63,10 @@ json字符串为：{action:'',reg_startup:""}
 9. 当注入的启动代码重复的时候，返回错误，并不予以注入。
 ```
 
-### *下载：* 
-1. Open Source：
-2. virtualbox image：
-3. 树莓派的image:
+### *关于OPener_Server标准：* 
+这个标准描述了该Http容器的最终实现。这个标准可以指导以不同的语言来实现这个Opener_Server容器。
+现阶段Opener_Server标准主要靠Opener_Server.pl该程序来阐述。
+Opener_Server.pl该程序的位置：https://github.com/openerserver/openerserver_perl
 
 
 ### *项目的初衷：* 
