@@ -42,7 +42,7 @@ json字符串为：{action:'',reg_startup:""}
 {action:'reg_url',url:"",host:'*:*',type:'form_post',go:""}  ### 指定host上的url为form的post方式的请求，这个请求的处理的代码位于go内。
 {action:'reg_url',url:"",host:'*:*',type:'ajax_post',go:""}  ### 指定host上的url为ajax的post方式的请求（也可以说是Http 的post模式），这个请求的处理的代码位于go内。
 {action:'reg_url',url:"",host:'*:*',type:'html5_file_post',go:""} ### 指定host上的url为html5的文件 post上方式的请求。使用ajax post模式上传大的文件。上传成功后调用go
-{action:'remote_reg_url',remote_url:"",url:"",host:'*:*',type:'',go:""} ### 从远程url地址中取回需要reg的go内容，然后执行reg_url操作
+{action:'remote_reg_url',remote_url:"",url:"",host:'*:*',type:''} ### 从远程url地址中取回需要reg的go内容，然后执行reg_url操作
 
 {action:'new_http_server',port:'',host:''} ###在端口 port ，ip地址 host上按照http server的模式监听。
 {action:'new_https_server',port:'',host:'',cert_file:''} ###在端口 port ，ip地址 host上按照https server的模式监听，并配置一个证书：cert_file，证书文件和当前进程在同一个地址。
